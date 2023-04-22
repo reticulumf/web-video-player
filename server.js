@@ -8,15 +8,16 @@ const rangeParser = require('range-parser');
 const app = express();
 
 const videosDir = process.argv[2] || path.join(__dirname, 'videos');
+const publicDir = path.join(__dirname, 'public');
 
 const videoExtensions = ['.mp4', '.mkv', '.webm'];
 
 app.use(cors());
 
-app.use(express.static(__dirname));
+app.use(express.static(publicDir));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+    res.sendFile(path.join(publicDir, 'index.html'));
 });
 
 app.get('/videos', (req, res) => {
