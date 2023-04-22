@@ -1,0 +1,22 @@
+body {
+    background-image: url("hello-kitty.jpeg");
+  }
+button {
+    height:60px;
+    width:100px;
+    color: crimson;
+    border-radius: 15px;
+    background-color: pink;
+    font-size: 25px;
+    font-weight: bold;
+}
+h1 {
+    color: crimson;
+    font-size: 50px;
+}
+h2 {
+    color: crimson;
+}
+.biggerdot {
+    font-size: 60px;
+}

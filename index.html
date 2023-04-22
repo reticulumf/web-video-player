@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Video Player</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body onload="loadVideoList()">
+    <h1>&#x2022;<span class="biggerdot">&#x2022;</span>&#9829; Video Player &#9829;<span class="biggerdot">&#x2022;</span>&#x2022;</h1>
+    <h2 id="name">Select video</h2>
+    <video id="videoPlayer" width="800" height="450" type="video/mp4" preload="auto" controls></video>
+    <div id="buttonbar">
+        <button id="restart" onclick="restart()">|&lt;</button>
+        <button id="back" onclick="skip(-5)">&lt;&lt;</button>
+        <button id="play" onclick="play()">||</button>
+        <button id="forward" onclick="skip(5)">&gt;&gt;</button>
+        <button id="forward" onclick="skip(60)">&gt;&gt;&gt;&gt;</button>
+    </div>
+    <ul id="videoList"></ul>
+    <script src="ui.js"></script>
+  </body>
+</html>
