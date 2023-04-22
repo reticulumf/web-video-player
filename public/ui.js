@@ -30,7 +30,7 @@ xhr.onload = function () {
       const li = document.createElement('li');
       const a = document.createElement('a');
       a.textContent = video.name;
-      a.href = '#';
+      a.href = '#' + video.name;
       a.addEventListener('click', function () {
         const videoPlayer = document.getElementById('videoPlayer');
         const playButton = document.getElementById('play');
